@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated To-Do List</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+  <div class="todo-app">
+    <h1>🌟 My Awesome To-Do List</h1>
+    
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." />
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Search tasks..." />
+
+    <ul id="taskList" class="task-list"></ul>
+
+    <button id="clearAllBtn" onclick="clearAllTasks()">🧹 Clear All</button>
+  </div>
+
+  <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
